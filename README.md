@@ -26,13 +26,10 @@ This board acts as an **airspeed signal processing unit**. It reads differential
 - Raw pressure readings are digitally filtered.
 - The airspeed \( v \) is calculated using:
 
-\[
-v = \sqrt{\frac{2 \cdot \Delta P}{\rho}}
-\]
-
+v = sqrt 2. Delta P / rho
 where:
-- \( \Delta P \) = differential pressure in Pa
-- \( \rho \) = air density (typically 1.225 kg/m³ at sea level)
+- Delta P = differential pressure in Pa
+- rhO = air density (typically 1.225 kg/m³ at sea level)
 
 ### 3. **Data Output (SPI + Interrupt)**
 - Filtered airspeed data is provided to an SPI master.
